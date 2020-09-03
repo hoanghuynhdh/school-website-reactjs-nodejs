@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header-mid {
+    /* overflow: hidden; */
+    /* position: fixed; */
+    /* position: sticky; */
+    width: 100%;
+    top:0;
+    text-align: left;
+    z-index:999;
+    background: #1AACD3;
+}
+.menu {
+    list-style: none; 
+    display: block;
+	z-index:9999;
+}
+.menu li {
+    display: inline-block; 
+    position: relative; 
+    padding: 15px 0;
+}
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+.menu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+.menu a:hover:after { 
+    width: 100%; 
+    left: 0;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    min-width: 220px;
+    z-index: 999;
+    background: #1AACD3;
+}
+.submenu li {
+    list-style: none;
+    border: solid 1px;
+    display: block;
+    
+}
+.submenu a {
+    color: white;
+}
+.menu li:hover {
+    background: lightskyblue;
+}
+.menu > li:hover ul.submenu {
+    display: block;
+}
+.footer {
+    background: #1AACD3;
+    text-align: left;
+    color: white;
+    padding: 30px 0;
+}
+.content {
+    margin: 20px 0;
+    
+}
+img {
+    width: 100%;
+}
+.news {
+    border-bottom:1px solid #e6e6e6;
+    margin: 10px;
+    padding: 0 5px;
+    text-align: left;
+    
+}
+.news ul {
+    list-style: none;
+}
+.news li {
+    border-bottom:1px solid #e6e6e6;
+    border-left:1px solid #e6e6e6;
+    padding-left: 10px;
+}
+.rightContent {
+    border: 1px solid #e6e6e6;
+}
+.eduSystem {
+    color: white;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    height: 40px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.left div{
+    border: 1px solid ;
+    text-align: center;
+    width: 90px;
+}
+.left .head {
+    background: #1d559f;
+    color: white;
+}
+.left {
+    border-bottom:1px solid #e6e6e6;
+    padding-top: 20px;
+}
+.right {
+    border-bottom:1px solid #e6e6e6;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
